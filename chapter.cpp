@@ -6,7 +6,7 @@ Chapter::Chapter()
 Chapter::Chapter(string chapterTitle, Author chapterAuthor, int number)
     : title(chapterTitle), author(chapterAuthor), chapterNumber(number) {
 }
-Chapter::Chapter(Chapter& other)
+Chapter::Chapter(const Chapter& other)
     : title(other.title), author(other.author), chapterNumber(other.chapterNumber) {
 }
 Chapter::Chapter(Article &article)
